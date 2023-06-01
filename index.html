@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>computer engineering forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="logo.css">
+    <link rel="about" href="about.html">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head> 
+<body>
+   <section class="home">
+    <div class="main">
+        
+         <div class="logo"><img src="" alt=""></div>
+         <div class="mane">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="ONLINE COURSES.html">ONLINE COURSES</a></li>
+                <li><a href="GALLERY.html">GALLERY</a></li>
+                <li><a href="CONTACTS.html"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTS</a></li>
+            </ul>
+         </div> 
+         <div class="search">
+            <input type="search" class="srch" placeholder="type to text">
+            <a href="#"><button class="btn">search</button></a>
+         </div>  
+    </div>
+  </section>
+  <section>
+    <div class="login-box">
+		<div class="tab">
+			<button class="tablinks active" onclick="openForm(event, 'Login')">Login</button>
+			<button class="tablinks" onclick="openForm(event, 'Signup')">Signup</button>
+		</div>
+		<form id="Login" class="form-container">
+			<h2>Login Here</h2>
+			<div class="user-box">
+				<input type="text" name="" required="">
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="" required="">
+				<label>Password</label>
+			</div>
+			<button type="submit" class="btn">Login</button>
+		</form>
+		<form id="Signup" class="form-container" style="display:none;">
+			<h2>Signup Here</h2>
+			<div class="user-box">
+				<input type="text" name="" required="">
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="email" name="" required="">
+				<label>Email</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="" required="">
+				<label>Password</label>
+			</div>
+			<button type="submit" class="btn">Signup</button>
+		</form>
+	</div>
+
+	<script>
+		function openForm(evt, formName) {
+			var i, formContainer, tablinks;
+			formContainer = document.getElementsByClassName("form-container");
+			for (i = 0; i < formContainer.length; i++) {
+				formContainer[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(formName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+  </section>
+</body>
+</html>

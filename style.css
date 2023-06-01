@@ -1,0 +1,199 @@
+#{
+    margin: 0;
+    padding: 0%;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(3D\ mockup.png);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.logo{
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #ff7200;
+    width: 5px;
+    height: 5px;
+
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 16px;
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.search{
+    width: 330px;
+    float: right;
+    margin-right: 30px;
+    padding-top: 50px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 30px;
+    background: rgb(243, 238, 238);
+}
+.btn{
+    background-color: #ff7200;
+    width: 70px;
+    height: 30px;
+}
+.ABOUTUS{
+    min-height: 60VH;
+    position: relative;
+    
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+.form-box h1::after{
+    counter-reset: none;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.input-group{
+    height: 280px;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+.calvo{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    color: white;
+    font-size: 25px;
+}
+.klein{
+    color: #080808;
+}
+.CONTACTS{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contactform{
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+}
+.events{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    color: #eaeaea;
+    font-size: 25px;
+}
+.CONTACTS{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    color: #eaeaea;
+}
+.contactform{
+   width: 250px;
+   height: 380px;
+   top: 40%;
+   left: 770px;
+   position: absolute;
+   background-color: red;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 15px;
+   
+}
+.row{
+    border-style: solid;
+    border-width: 3px;
+    margin: 5px;
+}

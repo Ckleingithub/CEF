@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup and Login Page</title>
+	<link rel="stylesheet" type="text/css" href="logo.css">
+</head>
+<body>
+	<div class="login-box">
+		<div class="tab">
+			<button class="tablinks active" onclick="openForm(event, 'Login')">Login</button>
+			<button class="tablinks" onclick="openForm(event, 'Signup')">Signup</button>
+		</div>
+		
+		<form id="Login" class="form-container">
+			<h2>Login Here</h2>
+			<div class="user-box">
+				<input type="text" name="" required="">
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="" required="">
+				<label>Password</label>
+			</div>
+			<button type="submit" class="btn">Login</button>
+		</form>
+		<form id="Signup" class="form-container" style="display:none;">
+			<h2>Signup Here</h2>
+			<div class="user-box">
+				<input type="text" name="" required="">
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="email" name="" required="">
+				<label>Email</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="" required="">
+				<label>Password</label>
+			</div>
+			<button type="submit" class="btn">Signup</button>
+		</form>
+	</div>
+
+	<script>
+		function openForm(evt, formName) {
+			var i, formContainer, tablinks;
+			formContainer = document.getElementsByClassName("form-container");
+			for (i = 0; i < formContainer.length; i++) {
+				formContainer[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(formName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
